@@ -8,13 +8,15 @@
 			"name": "Articles",
 			"short": "articles",
 			"index": "index",
-			"content": "content/articles"
+			"content": "content/articles",
+			"visibleEntries": 8
 		},
 		{
 			"name": "Imprint",
 			"short": "imprint",
 			"index": "index-fullscreen",
-			"content": "content/imprint"
+			"content": "content/imprint",
+			"visibleEntries": 8
 		}
 	]
 }
