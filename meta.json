@@ -1,0 +1,20 @@
+{
+	"title": "WiderWille",
+	"copyright": "Copyright &copy; 2012 by Sidney Just",
+
+	"sites": 
+	[
+		{
+			"name": "Articles",
+			"short": "articles",
+			"index": "index",
+			"content": "content/articles"
+		},
+		{
+			"name": "Imprint",
+			"short": "imprint",
+			"index": "index-fullscreen",
+			"content": "content/imprint"
+		}
+	]
+}

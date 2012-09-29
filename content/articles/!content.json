@@ -1,0 +1,48 @@
+[{
+	"header": "Firedrake 0.2 release",
+	"date": "July 25, 2012 02:52:00 CET",
+	"file": "firedrake020.md",
+	"tags": ["firedrake", "firedrake 0.2"]
+},
+{
+	"header": "Why so serious?",
+	"date": "March 07, 2012 02:33:00 CET",
+	"file": "whyserious.md",
+	"tags": ["rant", "indie", "games"]
+},
+{
+	"header": "Jublog update",
+	"date": "February 08, 2012 16:50:00 CET",
+	"file": "someupdate.md",
+	"tags": ["jublog"]
+},
+{
+	"header": "Firedrake",
+	"date": "January 07, 2012 21:01:00 CET",
+	"file": "firedrake.md",
+	"tags": ["firedrake", "projects", "nanos", "kernel"]
+},
+{
+	"header": "Qemu and LLVM/Clang",
+	"date": "December 07, 2011 00:27:00 CET",
+	"file": "qemu.md",
+	"tags": []
+},
+{
+	"header": "Vinter 0.4.0",
+	"date": "December 03, 2011 14:52:00 CET",
+	"file": "vinter04.md",
+	"tags": ["vinter", "projects"]
+},
+{
+	"header": "New Blog",
+	"date": "November 13, 2011 15:26:00 CET",
+	"file": "newblog.md",
+	"tags": ["jublog", "projects"]
+},
+{
+	"header": "Vinter is coming!",
+	"date": "October 28, 2011 21:13:00 CET",
+	"file": "vinteriscoming.md",
+	"tags": ["vinter", "projects"]
+}]
