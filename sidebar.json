@@ -63,10 +63,10 @@
 	"header": "Twitter",
 	"id": "twitter",
 	"type": 2,
-	"frame": false,
+	"frame": false
 },
 {
-	"header": "Uberspace"	
+	"header": "Uberspace",
 	"id": "uberspace",
 	"type": 2,
 	"frame": false,
