@@ -1,4 +1,10 @@
 [{
+	"header": "Update",
+	"date": "October 2, 2012 07:31:00 CET",
+	"file": "update02.md",
+	"tags": ["firedrake", "jublog", "update", "general"]
+},
+{
 	"header": "Firedrake 0.2 release",
 	"date": "July 25, 2012 02:52:00 CET",
 	"file": "firedrake020.md",
@@ -13,7 +19,7 @@
 {
 	"header": "Jublog update",
 	"date": "February 08, 2012 16:50:00 CET",
-	"file": "someupdate.md",
+	"file": "update01.md",
 	"tags": ["jublog"]
 },
 {
