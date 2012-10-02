@@ -7,7 +7,3 @@ While we designed Vinter, we made some radical decisions, the biggest is that we
 Probably the second biggest decision we made was, that we don't support OpenGL ES 1.1! We only support shader based rendering, because this is how modern GPUs render. If you use the FFP on a Mac or a modern iOS device (read, everything from the third generation and all iPads), it will be emulated with shaders which is slow and also you are kinda very limiting. We don't want this, so we give you full freedom with shaders. Shaders aren't the future, neither are they bleeding edge, they are state of the art! So what we do is supporting OpenGL ES 2.0, OpenGL 2.0 (GSlang 2.0) and OpenGL 3.2 (GSlang 1.50) which runs on every device shipped in the last three years.
 
 If you are interested in Vinter, you can find the source code together with a sample project at the already mentioned [GitHub](https://github.com/JustSid/Vinter/ "Vinter on Github") page. You can also take a look into the [Vinter Viki](http://vinter2d.org/ "Vinters Wiki") we are currently building (be aware, the content is a little bit limited at the moment).
-
-![Vinter 01](./vinter01.png)
-![Vinter 02](./vinter02.png)
-![Vinter 03](./vinter03.png)
