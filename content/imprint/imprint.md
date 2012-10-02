@@ -14,8 +14,8 @@ This blog wouldn't be possible without a few third party open source projects, m
  * [Relative date](https://github.com/azer/relative-date) (DWTFYWTPL)
  * [Dateformat-js](https://github.com/minodisk/dateformat-js) (MIT License)
  * [Node-config](https://github.com/lorenwest/node-config) (Apache License 2.0)
- * [less.j](https://github.com/cloudhead/less.js) (Apache License 2.0)
- + [less-middlewar](https://github.com/emberfeather/less.js-middleware) (MIT License)
+ * [less.js](https://github.com/cloudhead/less.js) (Apache License 2.0)
+ + [less-middleware](https://github.com/emberfeather/less.js-middleware) (MIT License)
  * [sequelize](https://github.com/sdepold/sequelize) (MIT License)
 
 ### German law foobar
