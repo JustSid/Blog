@@ -1,8 +1,8 @@
- * **Sidney Just**
- * Brunebeckerstraße 84e,
- * 58454 Witten
- * Tel: +49 2302 425548
- * Email: justsid@me.com
+**Sidney Just**  
+Brunebeckerstraße 84e,  
+58454 Witten  
+Tel: +49 2302 425548  
+Email: justsid@me.com  
 
 ### Third party
 This blog wouldn't be possible without a few third party open source projects, mainly [Node.js](http://nodejs.org/). However, the following projects have been used as well (list is in no particular order):
