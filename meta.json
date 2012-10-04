@@ -5,18 +5,20 @@
 	"sites": 
 	[
 		{
-			"name": "Articles",
+			"title": "Articles",
 			"short": "articles",
 			"index": "index",
 			"content": "content/articles",
-			"visibleEntries": 8
+			"visibleEntries": 8,
+			"rss": true
 		},
 		{
-			"name": "Imprint",
+			"title": "Imprint",
 			"short": "imprint",
 			"index": "index-fullscreen",
 			"content": "content/imprint",
-			"visibleEntries": 8
+			"visibleEntries": 1,
+			"rss": false
 		}
 	]
 }
