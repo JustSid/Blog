@@ -17,10 +17,12 @@ Debugging of kernels is a pain in the ass. Mostly because there is no underlying
 With Firedrake 0.3 you can still do all that, but you can also do more stuff.  
 One major change is the `syslog` implementation, up until now it wasn't multithreading safe, meaning that two or more threads were able to write to the video memory at the same time, resulting in strange artifacts (and crashes). Now it's completely multithreading safe, each message is queued inside a new process called `syslogd` which will then write out every message exactly in the order they were received. It also makes sure that every committed message is eventually written out, even if there is a kernel panic.
 
-The stacktrace implementation has been extended quite a bit as well, for example you are now able to create stacktraces for threads different than the currently running one and it now also catches and symbolicates frames from libraries loaded via libio, which looks like this (the `+ 0x3000` is the relocation base of the library):  
+The stacktrace implementation has been extended quite a bit as well, for example you are now able to create stacktraces for threads different than the currently running one and it now also catches and symbolicates frames from libraries loaded via libio, which looks like this (the `+ 0x3000` is the relocation base of the library):
+
 ![stacktraces](/firedrake01.png)
 
-There is another new debug and performance feature called watchdogd inside Firedrake 0.3. It's a special process running inside the kernel which samples each kernel thread every 5 milliseconds and looks what they are currently doing. Then it puts each sample result in a counted set (okay, it's just a set, not a counted one…) and if needed, it prints a nicely formatted list with the 15 functions the thread spent the most time in. Example of the unit test thread:  
+There is another new debug and performance feature called watchdogd inside Firedrake 0.3. It's a special process running inside the kernel which samples each kernel thread every 5 milliseconds and looks what they are currently doing. Then it puts each sample result in a counted set (okay, it's just a set, not a counted one…) and if needed, it prints a nicely formatted list with the 15 functions the thread spent the most time in. Example of the unit test thread:
+
 ![watchdogd](/firedrake02.png)
 
 As you can see, `halloc()` is a real performance hog, and if you wanted to improve performance, this would be the low hanging fruit to optimize. This is a very simple, yet efficient way to track down performance bottle necks. Keep in mind though that it's not a complete time based sampler, ie. it doesn't care about the call tree and just looks at the function the process is currently in!
