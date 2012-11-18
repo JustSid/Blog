@@ -3,10 +3,10 @@
 	"id": "about",
 	"type": 0,
 	"frame": true,
-	"content": "Hi, I'm Sidney. I'm a iOS and OS X developer, Objective-C junkie and part time dragon hunter. This is my personal blog, where I write mostly about my projects. In the rare cases were I'm not writing code or blogposts, I'm watching <a href=\"http://www.youtube.com/watch?v=XPN5yZ5bpF8\" title=\"Yes, this really links to MLP!\">My Little Pony</a>."
+	"content": "Hi, I'm Sidney. I'm a iOS and OS X developer, Objective-C junkie and part time dragon hunter. This is my personal blog where I write about stuff that I happen to find interesting (in the most cases that means that I write about one of my projects). In the rare cases where I'm not writing code or blogposts, I'm watching <a href=\"http://www.youtube.com/watch?v=XPN5yZ5bpF8\" title=\"Yes, this really links to MLP!\">My Little Pony</a>."
 },
 {
-	"header": "You can find me on...",
+	"header": "Places I hang around",
 	"id": "places",
 	"type": 1,
 	"frame": true,
@@ -21,41 +21,12 @@
 			"link": "http://stackoverflow.com/users/350272/justsid"
 		},
 		{
-			"title": "Forrst",
-			"link": "http://forrst.me/JustSid"
+			"title": "Coderwall",
+			"link": "https://coderwall.com/justsid"
 		},
 		{
 			"title": "Twitter",
 			"link": "https://twitter.com/#!/widerwille"
-		},
-		{
-			"title": "IndieDB",
-			"link": "http://www.indiedb.com/members/justsid"
-		}
-	]
-},
-{
-	"header": "Blogroll",
-	"id": "blogroll",
-	"type": 1,
-	"frame": true,
-	"content": 
-	[
-		{
-			"title": "Nils Daumann",
-			"link": "http://slindev.com"
-		},
-		{
-			"title": "Marian Frische",
-			"link": "http://www.marianfrische.com"
-		},
-		{
-			"title": "jofre.de",
-			"link": "http://jofre.de"
-		},
-		{
-			"title": "Christian Behrenberg",
-			"link": "http://www.christian-behrenberg.de"
 		}
 	]
 },
