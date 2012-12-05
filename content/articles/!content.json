@@ -1,4 +1,10 @@
 [{
+	"title": "Firedrake Internals - From boot to kerneld in 20ms",
+	"date": "December 05, 2012 20:35:00 CET",
+	"file": "firedrake-internals-01.md",
+	"tags": ["firedrake", "firedrake internals"]
+},
+{
 	"title": "Firedrake 0.3 release",
 	"date": "December 03, 2012 21:40:00 CET",
 	"file": "firedrake030r.md",
