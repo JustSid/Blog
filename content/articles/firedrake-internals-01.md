@@ -15,7 +15,8 @@ Now that's a bit disappointing, isn't it? `ENTRY()` is just a macro defined in `
 
 So the next point in the booting process is the `sys_boot` function, which isn't written in assembler anymore, but plain old C and which can be found in `/sys/bootstrap/boot.c`. The first thing that function does is clearing the video output from any garbage and then printing a happy welcome message (the good old "Here be dragons!", alongside with some version information and the kernels compilation date).
 
-![bootstrapping](/firedrake03.png)  
+![bootstrapping](/firedrake03.png)
+
 (This is how Firedrake looks like at this point of the bootstrapping process)
 
 Now the real meat happens as Firedrake begins to initialize all its modules, each one providing one specific set of features to the kernel. There are eight modules as of now, so let's talk about each of them! One bit of clarification though, while I will say the word *module* quite a few times, they are just a concept and not actually separate modules! Each module is part of Firedrakes source code and binary, the functions are just grouped in a logical way and each group is called a module, with most of the modules providing a single initialization function that's called by sys_boot.
@@ -81,5 +82,6 @@ Memory, interrupts, time and scheduler, what else could we possibly need? Well, 
 Last, but not least, comes ioglue. Ioglue is the runtime dynamic link-editor of Firedrake, which allows it to load dynamic libraries into the kernel space. It's part of the kernels driver framework, and it has its entry inside [/sys/ioglue/iostore.c](https://github.com/JustSid/Firedrake/blob/release-0.3.0/sys/ioglue/iostore.c#L240). I don't actually want to go into too much detail here, because there will be another blogpost dedicated to ioglue and the driver framework in general, so just the basic concept of ioglue: It setups the iostore, which is responsible to store references to all loaded libraries (it's implemented as an Andersson tree). The next thing it does is to load the two essential kernel libraries (`libkernel.so` and `libio.so`) into the kernel, where they both are first relocated and then linked with each other and the kernel. Then it will initialize libio, a process which does an awful lot of stuff in the background and which I will discuss at a later point.
 
 ## Outro
-And then, we are done. The kernel is completely booted and ready to work, which it does by handing execution over to the kernel daemon (found in [/sys/kerneld/kerneld.c](https://github.com/JustSid/Firedrake/blob/release-0.3.0/sys/kerneld/kerneld.c#L38)). The kernel daemon also does a bit of bootstrapping to get some more things up and running, but I won't go into any details of these at this point. Here is how Firedrake looks like once it finished the boot process:  
+And then, we are done. The kernel is completely booted and ready to work, which it does by handing execution over to the kernel daemon (found in [/sys/kerneld/kerneld.c](https://github.com/JustSid/Firedrake/blob/release-0.3.0/sys/kerneld/kerneld.c#L38)). The kernel daemon also does a bit of bootstrapping to get some more things up and running, but I won't go into any details of these at this point. Here is how Firedrake looks like once it finished the boot process:
+
 ![booted](/firedrake04.png)  
