@@ -1,4 +1,10 @@
 [{
+	"title": "Register renaming",
+	"date": "March 14, 2013 04:28:00 CET",
+	"file": "register-renaming.md",
+	"tags": ["register renaming", "x86", "x86-84"]
+},
+{
 	"title": "Firedrake Internals - From boot to kerneld in 20ms",
 	"date": "December 05, 2012 20:35:00 CET",
 	"file": "firedrake-internals-01.md",
