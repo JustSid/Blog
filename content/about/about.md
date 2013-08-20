@@ -1,4 +1,4 @@
-<img src="/about-sid.jpg" class="float-left" />
+<img src="/about/about-sid.jpg" class="float-left" />
 ### Hi, I'm Sidney!
 I'm a iOS and OS X developer living in the beautiful Ruhr-area of Germany. When I'm not starting flame wars on reddit, I usually hang around on [Twitter](http://twitter.com/widerwille), [GitHub](https://github.com/JustSid) and [StackOverflow](http://stackoverflow.com/users/350272/justsid).
 
