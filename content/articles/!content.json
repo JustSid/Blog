@@ -1,78 +1,78 @@
 [{
 	"title": "Register renaming",
-	"date": "March 14, 2013 04:28:00 CET",
-	"file": "register-renaming.md",
+	"date": "14.03.2013 04:28:00 +0200",
+	"file": "013-register-renaming.md",
 	"tags": ["register renaming", "x86", "x86-84"]
 },
 {
 	"title": "Firedrake Internals - From boot to kerneld in 20ms",
-	"date": "December 05, 2012 20:35:00 CET",
-	"file": "firedrake-internals-01.md",
+	"date": "05.12.2012 20:35:00 +0200",
+	"file": "012-firedrake-internals-01.md",
 	"tags": ["firedrake", "firedrake internals"]
 },
 {
 	"title": "Firedrake 0.3 release",
-	"date": "December 03, 2012 21:40:00 CET",
-	"file": "firedrake030r.md",
+	"date": "03.12.2012 21:40:00 +0200",
+	"file": "011-firedrake030r.md",
 	"tags": ["firedrake", "firedrake 0.3"]
 },
 {
 	"title": "Firedrake 0.3",
-	"date": "October 24, 2012 02:02:00 CET",
-	"file": "firedrake030.md",
+	"date": "24.10.2012 02:02:00 +0200",
+	"file": "010-firedrake030.md",
 	"tags": ["firedrake", "firedrake 0.3"]
 },
 {
 	"title": "October update",
-	"date": "October 02, 2012 07:31:00 CET",
-	"file": "update02.md",
+	"date": "02.10.2012 07:31:00 +0200",
+	"file": "009-update02.md",
 	"tags": ["update", "jublog", "firedrake", "general"]
 },
 {
 	"title": "Firedrake 0.2 release",
-	"date": "July 25, 2012 02:52:00 CET",
-	"file": "firedrake020.md",
+	"date": "25.07.2012 02:52:00 +0200",
+	"file": "008-firedrake020.md",
 	"tags": ["firedrake", "firedrake 0.2"]
 },
 {
 	"title": "Why so serious?",
-	"date": "March 07, 2012 02:33:00 CET",
-	"file": "whyserious.md",
+	"date": "07.03.2012 02:33:00 +0200",
+	"file": "007-whyserious.md",
 	"tags": ["rant", "indie", "games"]
 },
 {
 	"title": "Jublog update",
-	"date": "February 08, 2012 16:50:00 CET",
-	"file": "update01.md",
+	"date": "08.02.2012 16:50:00 +0200",
+	"file": "006-update01.md",
 	"tags": ["jublog"]
 },
 {
 	"title": "Firedrake",
-	"date": "January 07, 2012 21:01:00 CET",
-	"file": "firedrake.md",
+	"date": "07.01.2012 21:01:00 +0200",
+	"file": "005-firedrake.md",
 	"tags": ["firedrake", "projects", "nanos", "kernel"]
 },
 {
 	"title": "Qemu and LLVM/Clang",
-	"date": "December 07, 2011 00:27:00 CET",
-	"file": "qemu.md",
+	"date": "07.12.2011 00:27:00 +0200",
+	"file": "004-qemu.md",
 	"tags": []
 },
 {
 	"title": "Vinter 0.4.0",
-	"date": "December 03, 2011 14:52:00 CET",
-	"file": "vinter04.md",
+	"date": "03.12.2011 14:52:00 +0200",
+	"file": "003-vinter04.md",
 	"tags": ["vinter", "projects"]
 },
 {
 	"title": "New Blog",
-	"date": "November 13, 2011 15:26:00 CET",
-	"file": "newblog.md",
+	"date": "07.11.2011 15:26:00 +0200",
+	"file": "002-newblog.md",
 	"tags": ["jublog", "projects"]
 },
 {
 	"title": "Vinter is coming!",
-	"date": "October 28, 2011 21:13:00 CET",
-	"file": "vinteriscoming.md",
+	"date": "28.10.2011 21:13:00 +0200",
+	"file": "001-vinteriscoming.md",
 	"tags": ["vinter", "projects"]
 }]

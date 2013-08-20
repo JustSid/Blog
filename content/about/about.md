@@ -1,0 +1,7 @@
+<img src="/about-sid.jpg" class="float-left" />
+### Hi, I'm Sidney!
+I'm a iOS and OS X developer living in the beautiful Ruhr-area of Germany. When I'm not starting flame wars on reddit, I usually hang around on [Twitter](http://twitter.com/widerwille), [GitHub](https://github.com/JustSid) and [StackOverflow](http://stackoverflow.com/users/350272/justsid).
+
+I started programming at the age of 11 when I grew bored of my Sims dying in fatal cooking accidents, and figured that I could create much betters games on my own. Soon after getting my first Visual Basic 6 book, I realized that I couldn't, but my interest and love for programming was sparked and I continued to copy from the book, alter the code a bit and check the result. Since my first steps I've come a long way, used numerous languages and technology stacks, but I still love programming with a passion! I love solving problems, and I love the challenge from nothing ever being the exact same and the need to adapt solutions and tools.
+
+Over the years I also grew fond of the lower level programming in C and C++. I love data structures and algorithms, as well as multithreading, and even more: Combining the three together. In the last three years, I created two major hobby projects because of that; The first, [firedrake](https://github.com/JustSid/firedrake), is a open source kernel for the i486 architecture, and the second, [Rayne](http://rayne3d.com), is a super fast, multithreaded 3d game engine.

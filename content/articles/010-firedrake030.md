@@ -19,11 +19,11 @@ One major change is the `syslog` implementation, up until now it wasn't multithr
 
 The stacktrace implementation has been extended quite a bit as well, for example you are now able to create stacktraces for threads different than the currently running one and it now also catches and symbolicates frames from libraries loaded via libio, which looks like this (the `+ 0x3000` is the relocation base of the library):
 
-![stacktraces](/firedrake02.png)
+![stacktraces](/firedrake02-thumb.png)
 
 There is another new debug and performance feature called watchdogd inside Firedrake 0.3. It's a special process running inside the kernel which samples each kernel thread every 5 milliseconds and looks what they are currently doing. Then it puts each sample result in a counted set (okay, it's just a set, not a counted one…) and if needed, it prints a nicely formatted list with the 15 functions the thread spent the most time in. Example of the unit test thread:
 
-![watchdogd](/firedrake01.png)
+![watchdogd](/firedrake01-thumb.png)
 
 As you can see, `halloc()` is a real performance hog, and if you wanted to improve performance, this would be the low hanging fruit to optimize. This is a very simple, yet efficient way to track down performance bottle necks. Keep in mind though that it's not a complete time based sampler, ie. it doesn't care about the call tree and just looks at the function the process is currently in!
 

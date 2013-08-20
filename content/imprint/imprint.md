@@ -1,22 +1,8 @@
 **Sidney Just**  
 Brunebeckerstraße 84e,  
 58454 Witten  
-Tel: +49 2302 425548  
-Email: justsid@me.com  
-
-### Third party
-This blog wouldn't be possible without a few third party open source projects, mainly [Node.js](http://nodejs.org/). However, the following projects have been used as well (list is in no particular order):
-
- * [Connect](http://www.senchalabs.org/connect/) (MIT License)
- * [Express.js](http://expressjs.com/) (MIT License)
- * [Jade](http://jade-lang.com/) (MIT License)
- * [Markdown-js](https://github.com/evilstreak/markdown-js) (MIT License)
- * [Relative date](https://github.com/azer/relative-date) (DWTFYWTPL)
- * [Dateformat-js](https://github.com/minodisk/dateformat-js) (MIT License)
- * [Node-config](https://github.com/lorenwest/node-config) (Apache License 2.0)
- * [less.js](https://github.com/cloudhead/less.js) (Apache License 2.0)
- + [less-middleware](https://github.com/emberfeather/less.js-middleware) (MIT License)
- * [sequelize](https://github.com/sdepold/sequelize) (MIT License)
+Tel: +49 (2302) 425548  
+Email: justsid@widerwille.com  
 
 ### German law foobar
 #### Haftung für Inhalte

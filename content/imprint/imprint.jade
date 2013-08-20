@@ -1,0 +1,25 @@
+include /head
+include /navbar
+include /footer
+include /analytics
+
+doctype 5
+html
+  head
+    mixin head()
+    link(rel='stylesheet', href='/css/core.css')
+
+    mixin headJS()
+  body
+    mixin navbar()
+
+    .description
+      .content
+        .row-fluid
+          .span12
+            .well
+              != html
+
+            mixin footer()
+
+    mixin analytics()
