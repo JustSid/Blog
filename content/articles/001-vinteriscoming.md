@@ -8,6 +8,6 @@ Probably the second biggest decision we made was, that we don't support OpenGL E
 
 If you are interested in Vinter, you can find the source code together with a sample project at the already mentioned [GitHub](https://github.com/JustSid/Vinter/ "Vinter on Github") page. You can also take a look into the [Vinter Viki](http://vinter2d.org/ "Vinters Wiki") we are currently building (be aware, the content is a little bit limited at the moment).
 
-![Vinter 01](/blog/vinter01-thumb.png)
-![Vinter 02](/blog/vinter02-thumb.png)
-![Vinter 03](/blog/vinter03-thumb.png)
+![Vinter 01](/articles/vinter01-thumb.png)
+![Vinter 02](/articles/vinter02-thumb.png)
+![Vinter 03](/articles/vinter03-thumb.png)
