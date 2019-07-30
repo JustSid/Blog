@@ -2,7 +2,7 @@
 <ul class="list-unstyled menu">
     {{ range .Site.Data.social.accounts }}
         <li>
-            <a href="{{ . }}">
+            <a href="{{ .url }}">
                 <i class="el el-{{.tag}} social social-{{.tag}}"></i> {{ .name }}
             </a>
         </li>
