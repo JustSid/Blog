@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "feresignum"
 theme = "coder"
 paginate = 5
+pygmentsStyle = "friendly"
+pygmentsCodefences = true
 
 [permalinks]
   posts = "/:slug"

@@ -36,23 +36,25 @@ _g_vtune_enabled = !(result == 0 && GetLastError() == ERROR_ENVVAR_NOT_FOUND);
 
 Now that we can detect profiling tools automatically at runtime, some simple macros can help with the rest. Here is an example set of macros:
 
-    #if NSIGHT
-        #include <nvToolsExt.h>
+```cpp
+#if NSIGHT
+    #include <nvToolsExt.h>
 
-        extern bool _g_nsight_enabled;
+    extern bool _g_nsight_enabled;
 
-        #define BEGIN_NSIGHT_EXCLUDE if(!_g_nsight_enabled) {
-        #define END_NSIGHT_EXCLUDE }
+    #define BEGIN_NSIGHT_EXCLUDE if(!_g_nsight_enabled) {
+    #define END_NSIGHT_EXCLUDE }
 
-        #define BEGIN_NSIGHT_ATTACHED if(_g_nsight_enabled) {
-        #define END_NSIGHT_ATTACHED }
-    #else
-        #define BEGIN_NSIGHT_EXCLUDE {
-        #define END_NSIGHT_EXCLUDE }
+    #define BEGIN_NSIGHT_ATTACHED if(_g_nsight_enabled) {
+    #define END_NSIGHT_ATTACHED }
+#else
+    #define BEGIN_NSIGHT_EXCLUDE {
+    #define END_NSIGHT_EXCLUDE }
 
-        #define BEGIN_NSIGHT_ATTACHED if(0) {
-        #define END_NSIGHT_ATTACHED }
-    #endif
+    #define BEGIN_NSIGHT_ATTACHED if(0) {
+    #define END_NSIGHT_ATTACHED }
+#endif
+```
 
 The major `NSIGHT` define is set by CMake and depends on whether the build is a production build (in which case it is always 0 as we ship without NSight support) and if not whether the Nvidia `nvToolsExt64_1.dll` DLL was found by CMake on the system. This is basically just one big on/off toggle for the whole system. And then we have macros to enable/disable whole code sections to run whether NSight is detected or not. We use this for example to turn off some OpenGL extensions that make debugging harder (shader binaries) or just aren't supported in general (`GL_ARB_shader_texture_lod`).
 

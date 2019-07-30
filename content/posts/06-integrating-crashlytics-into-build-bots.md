@@ -31,14 +31,16 @@ Okay, cool, someone put an `assert(0)` on line 81 of a source file I have no acc
 
 Also, for some reason, someone thought it was a great idea to do the equivalent of this:
 
-    @try
-    {
-        LoadInfoPLIST();
-    }
-    @catch(NSException *e)
-    {
-        assert(0); // Line 81
-    }
+```objc
+@try
+{
+    LoadInfoPLIST();
+}
+@catch(NSException *e)
+{
+    assert(0); // Line 81
+}
+```
 
 Again, please, don’t try to be too helpful here...
 

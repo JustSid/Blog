@@ -11,19 +11,21 @@ The parser
 
 The parser got some major improvements! It’s still not a Clang but something home cooked, but boy did they put some serious effort into it. It’s still not quite there, for example, it still has issues deducing potential side effects in lambdas properly, like in the following snippet:
 
-    template<class T>
-    void Enumerate(const std::function<void (T *, size_t, bool &)>& callback) const
+```cpp
+template<class T>
+void Enumerate(const std::function<void (T *, size_t, bool &)>& callback) const
+{
+    bool stop = false;
+    
+    for(size_t i = 0; i < _count; i ++)
     {
-        bool stop = false;
+        callback(static_cast<T *>(_data[i]), i, stop);
         
-        for(size_t i = 0; i < _count; i ++)
-        {
-            callback(static_cast<T *>(_data[i]), i, stop);
-            
-            if(stop) // Complains about condition always being false here
-                break;
-        }
+        if(stop) // Complains about condition always being false here
+            break;
     }
+}
+```
 
 Another issue that is still there is that it complains about truncation when using an implicit cast to bool, although the C++ standard says this in *4.12 Boolean Conversion*
 
@@ -33,12 +35,14 @@ I know that might sound pedantic, but I do make use of that quite often and I do
 
 On the other hand it did learn that things with a non-trivial destructor have side effects and thus doesn’t complain about an unused variable when using scope or lock guards like this:
 
-    void foo()
-    {
-        std::lock_guard<std::mutex> lock(_lock); // No longer complains about lock being unused
+```cpp
+void foo()
+{
+    std::lock_guard<std::mutex> lock(_lock); // No longer complains about lock being unused
 
-        // ...
-    }
+    // ...
+}
+```
 
 It also learned about override and similar keywords, as well as decltype(), so all in all it definitely got better and I’m now at a point where I feel okay with turning those live static analysis things back on. Just a tiny bit more.
 

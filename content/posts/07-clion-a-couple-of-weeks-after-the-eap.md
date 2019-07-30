@@ -28,22 +28,24 @@ CLion uses CMake as build system and CMake only. And it does a pretty good job a
 
 CMake runs static analysis on the code at all times (of course, it can be disabled in the settings). This is a great source of warm knees, empty batteries and what the fuck were they thinking?! The good thing is, it works reasonably well once it works and it did catch some things for me already. The bad thing is, it still breaks quite often and I’m torn between turning an otherwise useful feature off or just ignoring false positives. The whole problem is that instead of using a real compiler like Clang to parse the code, they have written their own parser, lexer and static analysis tool and it fails spectacularly at times. Normal C++ idioms like scope guards trigger unused variable warnings. Side effects aren’t properly deduced either:
 
-    void test()
-    {
-        std::atomic<bool> end = false;
+```cpp
+void test()
+{
+    std::atomic<bool> end = false;
 
-        auto f = [&](){
-            end = true;
-        };
+    auto f = [&](){
+        end = true;
+    };
 
-        std::async(std::move(f));
+    std::async(std::move(f));
 
-        while(!end)
-        {}
+    while(!end)
+    {}
 
-        // Code is never reached warning here, because the side effect of f is never taken into account
-        return; 
-    }
+    // Code is never reached warning here, because the side effect of f is never taken into account
+    return; 
+}
+```
 
 It’s not the end of the world, but it is so incredibly annoying. And there seems to be very little care about this. I filed [5 bug reports](https://youtrack.jetbrains.com/issues/CPP?q=by%3A+justsid) about broken inspections, over half a month ago, and so far there has been no sign of anyone even bothering to read them.
 

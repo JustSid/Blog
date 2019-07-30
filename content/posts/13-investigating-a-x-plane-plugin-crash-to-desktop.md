@@ -22,14 +22,16 @@ As it turns out, X-Assign almost does it right! And by doing so, it fails hard. 
 
 The way X-Assign does the parsing of its config files is a bit unconventional, it basically builds a super long format string on the stack and then passes that to `fscanf()`` which reads the whole file at once. In pseudo code we end up with something like:
 
-    char buffer[...];
+```c
+char buffer[...];
 
-    int count = XPLMGetDatavi("sim/joystick/joystick_axis_assignments", 0, 0, 0);
+int count = XPLMGetDatavi("sim/joystick/joystick_axis_assignments", 0, 0, 0);
 
-    for(int i = 0; i < count; i ++)
-        strcat(buffer, "%%i:%%i");
-        
-    fscanf(file, buffer, &arg_01, &arg_02, &arg_03, ...);
+for(int i = 0; i < count; i ++)
+    strcat(buffer, "%%i:%%i");
+    
+fscanf(file, buffer, &arg_01, &arg_02, &arg_03, ...);
+```
 
 Now, the problem with that approach is that you need to have a buffer on the stack that is long enough AND you need to supply enough arguments to fscanf(). One way or another, if your buffer is not long enough or you don't supply enough arguments, you'll end up smashing your stack and in the best case a crash (which is exactly what happened). X-Assign assumes 100 axis assignments, so the buffer and arguments are appropriately sized, however, now that X-Plane returns 250 it all starts to go wrong. Obviously the author tried to do the right thing by query-ing X-Plane for what the count, but then it didn't do the appropriate steps to verify it can cope with that.
 

@@ -30,30 +30,32 @@ That's the basic principle behind VK_NV_device_diagnostic_checkpoints. It doesn'
 
 The big problem in terms of practical usage is that the API allows you to put in a single pointer only and nothing else. It's all you get and it's really hard to express any kind of information with just 8 bytes. Or even worse, 4 bytes, on 32bit platforms. In X-Plane, we solve this problem by inserting pointers to structured data, in particular we have this struct:
 
-    enum class gfx_vk_checkpoint_type : uint8_t
-    {
-        begin_render_pass,
-        end_render_pass,
-        push_marker,
-        pop_marker,
-        draw,
-        generic
-    };
+```cpp
+enum class gfx_vk_checkpoint_type : uint8_t
+{
+    begin_render_pass,
+    end_render_pass,
+    push_marker,
+    pop_marker,
+    draw,
+    generic
+};
 
-    struct gfx_vk_checkpoint_data
+struct gfx_vk_checkpoint_data
+{
+    gfx_vk_checkpoint_data(const char *name, gfx_vk_checkpoint_type type) :
+        type(type),
+        prev(nullptr)
     {
-        gfx_vk_checkpoint_data(const char *name, gfx_vk_checkpoint_type type) :
-            type(type),
-            prev(nullptr)
-        {
-            strncpy(this->name, name, sizeof(this->name));
-            this->name[sizeof(this->name) - 1] = '\0';
-        }
+        strncpy(this->name, name, sizeof(this->name));
+        this->name[sizeof(this->name) - 1] = '\0';
+    }
 
-        char name[48];
-        gfx_vk_checkpoint_type type;
-        gfx_vk_checkpoint_data *prev;
-    };
+    char name[48];
+    gfx_vk_checkpoint_type type;
+    gfx_vk_checkpoint_data *prev;
+};
+```
 
 (Note that I omitted a bunch of convenience constructors for brevity here)
 
@@ -63,21 +65,23 @@ The struct itself is purposefully kept trivially destructible because that means
 
 And finally, we have an `encode_checkpoint` method on our command buffer abstraction, which provides the insertion mechanic:
 
-    template<class... Args>
-    void encode_checkpoint(Args&&... args)
+```cpp
+template<class... Args>
+void encode_checkpoint(Args&&... args)
+{
+#if GFX_VK_CHECKPOINTS
+    if(m_supports_checkpoints)
     {
-    #if GFX_VK_CHECKPOINTS
-        if(m_supports_checkpoints)
-        {
-            auto *data = m_checkpoint_allocator->alloc<gfx_vk_checkpoint_data>(std::forward<Args>(args)...);
-        
-            data->prev = m_last_checkpoint;
-            m_last_checkpoint = data;
+        auto *data = m_checkpoint_allocator->alloc<gfx_vk_checkpoint_data>(std::forward<Args>(args)...);
+    
+        data->prev = m_last_checkpoint;
+        m_last_checkpoint = data;
 
-            m_device->vkCmdSetCheckpointNV(m_command_buffer, data);
-        }
-    #endif
+        m_device->vkCmdSetCheckpointNV(m_command_buffer, data);
     }
+#endif
+}
+```
 
 With all of that in place, all that's left is to annotate the engine! By default, the engine will automatically encode checkpoints at render pass boundaries and when pushing or popping debug markers. After encountering the device lost error, it becomes easy to pepper the general region with more fine grained checkpoints to really narrow things in.
 
