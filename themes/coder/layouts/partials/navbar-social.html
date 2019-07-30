@@ -1,0 +1,18 @@
+<h4>Social</h4>
+<ul class="list-unstyled menu">
+    {{ range .Site.Data.social.accounts }}
+        <li>
+            <a href="{{ . }}">
+                <i class="el el-{{.tag}} social social-{{.tag}}"></i> {{ .name }}
+            </a>
+        </li>
+    {{ end }}
+
+    {{ with .OutputFormats.Get "RSS" }}
+    <li>
+        <a href="{{ .RelPermalink }}">
+         <i class="el el-rss"></i> Feed
+        </a>
+    </li>
+    {{ end }}
+</ul>

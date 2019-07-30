@@ -1,0 +1,12 @@
+baseURL = "https://feresignum.com/"
+languageCode = "en-us"
+title = "feresignum"
+theme = "coder"
+paginate = 5
+
+[permalinks]
+  posts = "/:slug"
+
+[params]
+  description = "Of random bits and bytes"
+  featured_image = "/images/flair.png"

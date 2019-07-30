@@ -1,0 +1,19 @@
+{
+	"accounts": [
+		{
+			"name": "GitHub",
+			"tag": "github",
+			"url": "https://github.com/JustSid"
+		},
+		{
+			"name": "StackOverflow",
+			"tag": "stackoverflow",
+			"url": "https://stackoverflow.com/users/350272/justsid"
+		},
+		{
+			"name": "Twitter",
+			"tag": "twitter",
+			"url": "https://twitter.com/feresignum"
+		}
+	]
+}

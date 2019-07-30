@@ -1,0 +1,7 @@
+{{ $featured_image := .Param "featured_image"}}
+{{ if $featured_image }}
+<header class="container-fluid cover" style="background-image: url({{ $featured_image }})">
+{{else}}
+<header class="container-fluid cover">
+{{ end }}
+</header>

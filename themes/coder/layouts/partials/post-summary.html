@@ -1,0 +1,18 @@
+<article class="summary col-md-12 post">
+    <header>
+        <h2 class="title">
+        <a href="{{ .Permalink }}">{{ .Title}}</a> 
+        </h2>
+    </header>
+    
+    <div class="subhead">
+        <time datetime={{ .PublishDate.Format "2 January 2006" }}>{{ .PublishDate.Format "2 January 2006" }}</time>
+        {{- partial "post-tags.html" . -}}
+    </div>
+
+    <section class="description">
+        <p>{{ .Summary }} 
+        <a class="read-more" href="{{ .Permalink }}"><i class="el el-caret-right read-more"></i></a>
+        </p>
+    </section>
+</article>
