@@ -5,6 +5,7 @@ theme = "coder"
 paginate = 5
 pygmentsStyle = "friendly"
 pygmentsCodefences = true
+assetDir = "assets"
 
 [permalinks]
   posts = "/:slug"

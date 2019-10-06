@@ -17,10 +17,15 @@
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     {{ end }}
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/css/monokai_sublime.css">
-    <link rel="stylesheet" href="/css/default.css">
-	  <link rel="stylesheet" href="/css/elusive-icons.min.css">
+    {{ $bootstrap := resources.Get "css/bootstrap.css" | minify }}
+    {{ $theme := resources.Get "css/theme.css" }}
+    {{ $monokai_sublime := resources.Get "css/monokai_sublime.css" | minify }}
+    {{ $elusive := resources.Get "css/elusive-icons.css" | minify | fingerprint }}
+
+    {{ $style := slice $bootstrap $monokai_sublime $theme | resources.Concat "style.css" | fingerprint }}
+    
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+    <link rel="stylesheet" href="{{ $elusive.RelPermalink }}" />
 
     {{ block "favicon" . }}
       {{ partialCached "site-favicon.html" . }}
