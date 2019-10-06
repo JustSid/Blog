@@ -1,13 +1,24 @@
 @font-face {
-    font-family: 'ApexBook';
-    src: url('/fonts/apexnew-book-webfont.eot');
-    src: url('/fonts/apexnew-book-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/apexnew-book-webfont.woff') format('woff'),
-         url('/fonts/apexnew-book-webfont.ttf') format('truetype'),
-         url('/fonts/apexnew-book-webfont.svg#ApexNewBook') format('svg');
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Light-BETA.woff') format('woff'),
+         url('/fonts/Inter-Light-BETA.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Regular.woff') format('woff'),
+         url('/fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
 
+@font-face {
+    font-family: 'FiraCode';
+    src: url('/fonts/FiraCode-Regular.woff') format('woff'),
+         url('/fonts/FiraCode-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 pre {
@@ -15,9 +26,17 @@ pre {
   padding:0px;
 }
 
+code {
+  font-family: 'FiraCode';
+}
+
+body {
+  font-family: 'Inter'
+}
 
 h1,h2,h3,h4,h5 {
-  font-family: "ApexBook"
+  font-family: 'Inter';
+  font-weight: bold;
 }
 a { 
 color:#4078c0;
