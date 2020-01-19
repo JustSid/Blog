@@ -1,6 +1,6 @@
 baseURL = "https://feresignum.com/"
 languageCode = "en-us"
-title = "feresignum"
+title = "Feresignum"
 theme = "coder"
 paginate = 5
 pygmentsStyle = "friendly"
@@ -13,3 +13,8 @@ assetDir = "assets"
 [params]
   description = "Of random bits and bytes"
   featured_image = "/images/flair.png"
+  author = "Sidney Just"
+
+  twitter = "feresignum"
+  github = "JustSid"
+  stackoverflow = "350272"

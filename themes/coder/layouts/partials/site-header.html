@@ -3,8 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
-    <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
+    
+    {{ if .Params.Title }}
+      <title>{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}</title>
+    {{ else }}
+      <title>{{ .Site.Title }} {{ with .Param "description" }} | {{ . }}{{ end }}</title>
+    {{ end }}
+
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -17,12 +22,12 @@
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     {{ end }}
 
-    {{ $bootstrap := resources.Get "css/bootstrap.css" | minify }}
+    {{ $bootstrap := resources.Get "css/bootstrap.css" }}
     {{ $theme := resources.Get "css/theme.css" }}
-    {{ $monokai_sublime := resources.Get "css/monokai_sublime.css" | minify }}
+    {{ $monokai_sublime := resources.Get "css/monokai_sublime.css" }}
     {{ $elusive := resources.Get "css/elusive-icons.css" | minify | fingerprint }}
 
-    {{ $style := slice $bootstrap $monokai_sublime $theme | resources.Concat "style.css" | fingerprint }}
+    {{ $style := slice $bootstrap $monokai_sublime $theme | resources.Concat "style.css" | minify | fingerprint }}
     
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
     <link rel="stylesheet" href="{{ $elusive.RelPermalink }}" />

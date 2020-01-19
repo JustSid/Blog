@@ -3,7 +3,12 @@
         <div class="row">
           <div class="col-xs-6">
           <i class="el el-stop footer-icon"></i>
-            &copy; {{ .Date.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> All rights reserved.<br><br>
+            {{ $author := .Param "author"}}
+            {{ if $author }}
+              &copy; 2020 <a href="{{ .Site.BaseURL }}">{{ $author }}</a> All rights reserved.<br><br>
+            {{ else }}
+              &copy; 2020 <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> All rights reserved.<br><br>
+            {{ end }}
           </div>
           <div class="col-xs-6 text-right hidden-sm hidden-xs">Proudly published with <a href="https://gohugo.io">Hugo</a></div>
         </div>
