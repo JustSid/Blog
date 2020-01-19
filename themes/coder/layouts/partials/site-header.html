@@ -25,12 +25,11 @@
     {{ $bootstrap := resources.Get "css/bootstrap.css" }}
     {{ $theme := resources.Get "css/theme.css" }}
     {{ $monokai_sublime := resources.Get "css/monokai_sublime.css" }}
-    {{ $elusive := resources.Get "css/elusive-icons.css" | minify | fingerprint }}
+    {{ $elusive := resources.Get "css/elusive-icons.css" }}
 
-    {{ $style := slice $bootstrap $monokai_sublime $theme | resources.Concat "style.css" | minify | fingerprint }}
+    {{ $style := slice $bootstrap $monokai_sublime $theme $elusive | resources.Concat "style.css" | minify | fingerprint }}
     
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-    <link rel="stylesheet" href="{{ $elusive.RelPermalink }}" />
 
     {{ block "favicon" . }}
       {{ partialCached "site-favicon.html" . }}
