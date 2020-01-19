@@ -9,6 +9,9 @@
             </div>
 
         </header>
+        <div class="col-xs-12 subhead">
+            Published on <time datetime={{ .PublishDate.Format "2 January 2006" }}>{{ .PublishDate.Format "2 January 2006" }}</time>. Filed under {{- partial "post-tags.html" . -}}
+        </div>
 
         <section class="col-xs-12">
             {{ .Content }}

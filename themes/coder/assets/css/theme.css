@@ -204,3 +204,11 @@ article.post img {
 i.tag {
   color: #a94442;
 }
+
+.label-tag {
+  background-color: #999;
+}
+.label-tag[href]:hover,
+.label-tag[href]:focus {
+  background-color: #5e5e5e;
+}

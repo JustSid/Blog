@@ -1,10 +1,8 @@
-<span class='fa fa-tags'></span>
-
 {{ $taxonomy := "tags" }}
 {{ with .Param $taxonomy }}
     {{ range $index, $tag := . }}
       {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-          <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
+      	<a href="{{ .Permalink }}"><span class="label label-default">{{ $tag | urlize }}</span></a>
       {{- end -}}
     {{- end -}}
 {{ end }}

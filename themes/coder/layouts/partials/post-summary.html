@@ -6,8 +6,7 @@
     </header>
     
     <div class="subhead">
-        <time datetime={{ .PublishDate.Format "2 January 2006" }}>{{ .PublishDate.Format "2 January 2006" }}</time>
-        {{- partial "post-tags.html" . -}}
+        Published on <time datetime={{ .PublishDate.Format "2 January 2006" }}>{{ .PublishDate.Format "2 January 2006" }}</time>. Filed under {{- partial "post-tags.html" . -}}
     </div>
 
     <section class="description">
