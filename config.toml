@@ -14,7 +14,4 @@ assetDir = "assets"
   description = "Of random bits and bytes"
   featured_image = "/images/flair.png"
   author = "Sidney Just"
-
-  twitter = "feresignum"
-  github = "JustSid"
-  stackoverflow = "350272"
+  goat_counter = "justsid"

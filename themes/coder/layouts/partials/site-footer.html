@@ -16,5 +16,24 @@
       </div>
     </footer>
     <a href="#" class="back-to-top"><span class="fa fa-angle-up fa-2x"></span></a>
+
+    {{ if eq (getenv "HUGO_ENV") "production" }}
+      {{ with .Param "goat_counter" }}
+        <script>
+          (function() {
+            window.counter = 'https://{{ . }}.goatcounter.com/count'
+
+            var script = document.createElement('script');
+            script.async = 1;
+            script.src = '//gc.zgo.at/count.js';
+            
+            var ins = document.getElementsByTagName('script')[0];
+            ins.parentNode.insertBefore(script, ins)
+
+          })();
+        </script>
+      {{ end }}
+    {{ end }}
+
   </body>
 </html>
