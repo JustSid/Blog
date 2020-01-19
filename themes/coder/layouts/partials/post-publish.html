@@ -1,5 +1,7 @@
  {{ if .Page.Draft }}
     Draft post.
 {{ else }}
-    Published on <time datetime={{ .PublishDate.Format "2 January 2nd 2006" }}>{{ .PublishDate.Format "2 January 2006" }}</time>.
+	{{ if ne ($.PublishDate.Format "2006-01-02") "0001-01-01" }}
+	    Published on <time datetime={{ .PublishDate.Format "2 January 2nd 2006" }}>{{ .PublishDate.Format "2 January 2006" }}</time>.
+    {{ end }}
 {{ end }}
