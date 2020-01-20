@@ -1,6 +1,6 @@
 +++
 title = "Of life and death"
-date = 2019-04-12T00:00:00+00:00
+date = 2018-04-12T00:00:00+00:00
 slug = "of-life-and-death"
 draft = true
 +++
