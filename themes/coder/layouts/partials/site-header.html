@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 
     {{ block "favicon" . }}
-      {{ partialCached "site-favicon.html" . }}
+      {{ partial "site-favicon.html" . }}
     {{ end }}
 
     {{ with .OutputFormats.Get "RSS" }}

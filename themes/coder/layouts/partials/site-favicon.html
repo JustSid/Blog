@@ -1,3 +1,21 @@
-{{ if .Site.Params.favicon }}
-<link rel="shortcut icon" href="/{{ .Site.Params.favicon }}" type="image/x-icon" />
+{{ with resources.Get "favionc/favicon.ico" }}
+	
+	{{ $icon := . | fingerprint}}
+
+	<link rel="shortcut icon" href="{{ $icon.RelPermalink }}" type="image/x-icon" />
+	<link rel="icon" href="{{ $icon.RelPermalink }}" type="image/x-icon" />
+
+{{ end }}
+
+{{ with resources.Get "favicon/favicon-96x96.png" }}
+	{{ $icon := . | fingerprint}}
+	<link rel="icon" type="image/png" sizes="96x96" href="{{ $icon.RelPermalink }}">
+{{ end }}
+{{ with resources.Get "favicon/favicon-32x32.png" }}
+	{{ $icon := . | fingerprint}}
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ $icon.RelPermalink }}">
+{{ end }}
+{{ with resources.Get "favicon/favicon-16x16.png" }}
+	{{ $icon := . | fingerprint}}
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ $icon.RelPermalink }}">
 {{ end }}
