@@ -19,19 +19,7 @@
 
     {{ if eq (getenv "HUGO_ENV") "production" }}
       {{ with .Param "goat_counter" }}
-        <script>
-          (function() {
-            window.counter = 'https://{{ . }}.goatcounter.com/count'
-
-            var script = document.createElement('script');
-            script.async = 1;
-            script.src = '//gc.zgo.at/count.js';
-            
-            var ins = document.getElementsByTagName('script')[0];
-            ins.parentNode.insertBefore(script, ins)
-
-          })();
-        </script>
+        <script data-goatcounter="https://{{ . }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
       {{ end }}
     {{ end }}
 
