@@ -41,6 +41,9 @@ h1,h2,h3,h4,h5 {
 a { 
 color:#4078c0;
 }
+a code {
+  color: #4078c0;
+}
 p,
 label,
 span,
