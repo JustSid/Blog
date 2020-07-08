@@ -6,7 +6,10 @@ tags = [ "metal", "programming" ]
 slug = "resolving-metal-gpu-timers"
 +++
 
-Almost a year ago, with macOS 10.15, Apple finally added GPU timer queries to Metal. The [documentation](https://developer.apple.com/documentation/metal/mtlcounterresulttimestamp?language=objc) for it is incredibly lacklustre to this day, saying the following about [`[MTLCounterResultTimestamp timestamp]`](https://developer.apple.com/documentation/metal/mtlcounterresulttimestamp/3081724-timestamp?language=objc): A timestamp."  
+Almost a year ago, with macOS 10.15, Apple finally added GPU timer queries to Metal. The [documentation](https://developer.apple.com/documentation/metal/mtlcounterresulttimestamp?language=objc) for it is incredibly lacklustre to this day, saying the following about [`[MTLCounterResultTimestamp timestamp]`](https://developer.apple.com/documentation/metal/mtlcounterresulttimestamp/3081724-timestamp?language=objc): 
+
+> A timestamp.
+
 That's pretty useless, there's no unit attached to it! I ended up writing the following tweet last December when I first implemented GPU timers for Metal:
 
 {{< tweet 1207478938588418048 >}}
