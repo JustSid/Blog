@@ -1,10 +1,10 @@
-+++
-title = "Firedrake memory corruption bug"
-date = 2015-01-04T00:00:00+00:00
-categories = ["Development", "VIM"]
-tags = [ "programming", "firedrake", "debugging" ]
-slug = "firedrake-memory-corruption-bug"
-+++
+---
+title: "Firedrake memory corruption bug"
+date: 2015-01-04T00:00:00+00:00
+lastmod: 2015-01-04T00:00:00+00:00
+tags: [ "programming", "firedrake", "debugging" ]
+slug: "firedrake-memory-corruption-bug"
+---
 
 
 There was a bug that I couldn’t figure out for the life of me. It was somewhere deep in my hobby kernel Firedrake and it made zero sense.

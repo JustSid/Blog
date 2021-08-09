@@ -1,10 +1,10 @@
-+++
-title = "Automatic detection of profiling tools"
-date = 2018-09-25T00:00:00+00:00
-categories = ["Development", "VIM"]
-tags = [ "programming", "debugging" ]
-slug = "automatic-detection-of-profiling-tools"
-+++
+---
+title: "Automatic detection of profiling tools"
+date: 2018-09-25T00:00:00+00:00
+lastmod: 2018-09-25T00:00:00+00:00
+tags: [ "programming", "debugging" ]
+slug: automatic-detection-of-profiling-tools"
+---
 
 Let's say that you occasionally look at your application with [NSight](https://developer.nvidia.com/nsight-graphics), [VTune](https://software.intel.com/en-us/vtune), or any other profiling tool of choice. Naturally you want to add debug markers into your application, but you might not necessarily ship with them or have them run at all when no profiling tool is attached. You could put them behind a command line flag, but I prefer automatic discovery: One build, when run with NSight, having all the debug markers I need to dissect a frame, and when run without NSight not doing any of that overhead. With X-Plane, there is another layer to that, and that is that specifically for NSight some features have to be disabled since they are making unsupported GL calls.
 

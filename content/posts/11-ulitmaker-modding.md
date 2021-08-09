@@ -1,10 +1,10 @@
-+++
-title = "Ultimaker modding"
-date = 2017-01-23T00:00:00+00:00
-categories = ["Development", "VIM"]
-tags = [ "3d-printing", "project" ]
-slug = "ulitmaker-modding"
-+++
+---
+title: "Ultimaker modding"
+date: 2017-01-23T00:00:00+00:00
+lastmod: 2017-01-23T00:00:00+00:00
+tags: [ "3d-printing", "project" ]
+slug: "ulitmaker-modding"
+---
 
 Long time no blog post, so I figured, I might as well write a blog post about something super boring: Modding my 3D Printer!
 

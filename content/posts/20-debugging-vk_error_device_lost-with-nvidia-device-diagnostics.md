@@ -1,10 +1,10 @@
-+++
-title = "Debugging VK_ERROR_DEVICE_LOST with Nvidia Device Diagnostics"
-date = 2019-04-12T00:00:00+00:00
-categories = ["Development", "VIM"]
-tags = [ "debugging", "graphics", "vulkan" ]
-slug = "debugging-vk_error_device_lost-with-nvidia-device-diagnostics"
-+++
+---
+title: "Debugging VK_ERROR_DEVICE_LOST with Nvidia Device Diagnostics"
+date: 2019-04-12T00:00:00+00:00
+lastmod: 2019-04-12T00:00:00+00:00
+tags: [ "debugging", "graphics", "vulkan" ]
+slug: "debugging-vk_error_device_lost-with-nvidia-device-diagnostics"
+---
 
 
 If you are working with Vulkan, chances are that at some point you'll run into a `VK_ERROR_DEVICE_LOST` error. It's the worst kind of error, chances are that your GPU choked on some data sometime about a frame or two ago and the position where you received the error is nowhere near where the GPU actually decided to throw up its hands and give up. This is of course because GPUs and CPUs are inherently decoupled from each other, and when you submit your work from the CPU to the GPU, the GPU will start crunching your numbers while in the meantime the CPU goes on with its busy life doing other things. Now, maybe while crunching your numbers the GPU encountered a page fault or did some other computation where it just couldn't proceed anymore afterwards. Or maybe it took too long to compute results and the kernel watchdog decided that enough was enough and restarted the device. Or something completely different! Either way, at some point this error will have propagated all the way back to your application in userspace and you'll have no idea why it happened. And are only left to guess about what went wrong and where. Well, Nvidia has your back with the extremely verbosely named [VK_NV_device_diagnostic_checkpoints](https://www.khronos.org/registry/vulkan/specs/1.1-extensions/man/html/VK_NV_device_diagnostic_checkpoints.html) extension, which is a lot like Nvidias Aftermath for DirectX, except it works on Vulkan. And because for some reason nobody on the internet seems to sing its praise, I will do so now in the form of this blog post!

@@ -1,10 +1,10 @@
-+++
-title = "CLion, a couple of weeks after the EAP"
-date = 2015-05-15T00:00:00+00:00
-categories = ["Development", "VIM"]
-tags = [ "programming" ]
-slug = "clion-a-couple-of-weeks-after-the-eap"
-+++
+---
+title: "CLion, a couple of weeks after the EAP"
+date: 2015-05-15T00:00:00+00:00
+lastmod: 2015-05-15T00:00:00+00:00
+tags: [ "programming" ]
+slug: "clion-a-couple-of-weeks-after-the-eap"
+---
 
 I bought [CLion](https://www.jetbrains.com/clion/) after sporadically using it in during the EAP phase. I’ve been using Xcode and Visual Studio as IDE of choice so far on OS X and Windows, and both are great, but when developing a cross platform library like [Rayne](https://rayne3d.com/) it definitely was a pain to keep both project files in sync. CLion promises to not have that issue, be cross platform AND allow me to use one single build system: CMake. If you are unaware about what CLion is, CLion is a C/C++ IDE by Jetbrains, the guys behind products like IntelliJ, AppCode, WebStorm and more. In short, they know IDEs.
 

@@ -1,10 +1,10 @@
-+++
-title = "Investigating a X-Plane plugin's crash to desktop"
-date = 2017-07-04T00:00:00+00:00
-categories = ["Development", "VIM"]
-tags = [ "debugging", "x-plane" ]
-slug = "investigating-a-x-plane-plugin-crash-to-desktop"
-+++
+---
+title: "Investigating a X-Plane plugin's crash to desktop"
+date: 2017-07-04T00:00:00+00:00
+lastmod: 2017-07-04T00:00:00+00:00
+tags: [ "debugging", "x-plane" ]
+slug: "investigating-a-x-plane-plugin-crash-to-desktop"
+---
 
 This post is about a crash to desktop that I investigated in a popular plugin for X-Plane, [X-Assign](https://forums.x-plane.org/index.php?/files/file/12551-x-assign-linmacwin3264/). This happened in my free time, although I had the advantage of having the X-Plane source code at hand.
 

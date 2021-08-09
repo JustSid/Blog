@@ -1,10 +1,10 @@
-+++
-title = "CLion 1.1 EAP"
-date = 2015-07-10T00:00:00+00:00
-categories = ["Development", "VIM"]
-tags = [ "programming" ]
-slug = "clion-1-1-eap"
-+++
+---
+title: "CLion 1.1 EAP"
+date: 2015-07-10T00:00:00+00:00
+lastmod: 2015-07-10T00:00:00+00:00
+tags: [ "programming" ]
+slug: "clion-1-1-eap"
+---
 
 After writing about my thoughts on the CLion 1.0 release, I figured it’s only fair if I now also write about the new [1.1 EAP](blog.jetbrains.com/clion/2015/07/clion-1-1-eap-starts/) which Jetbrains released yesterday. I’ve only tested it for about an hour, but, I’m very very pleased with it!
 The parser

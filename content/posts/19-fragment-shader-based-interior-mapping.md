@@ -1,10 +1,10 @@
-+++
-title = "Fragment shader based interior mapping"
-date = 2018-10-02T00:00:00+00:00
-categories = ["Development", "VIM"]
-tags = [ "programming", "graphics" ]
-slug = "fragment-shader-based-interior-mapping"
-+++
+---
+title: "Fragment shader based interior mapping"
+date: 2018-10-02T00:00:00+00:00
+lastmod: 2018-10-02T00:00:00+00:00
+tags: [ "programming", "graphics" ]
+slug: "fragment-shader-based-interior-mapping"
+---
 
 Seems like everybody is excited about the fake interior mapping in Spiderman these days. Here is a Kotaku video showing them off:
 

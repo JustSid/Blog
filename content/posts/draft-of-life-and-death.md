@@ -1,9 +1,10 @@
-+++
-title = "Of life and death"
-date = 2018-04-12T00:00:00+00:00
-slug = "of-life-and-death"
-draft = true
-+++
+---
+title: "Of life and death"
+date: 2018-04-12T00:00:00+00:00
+lastmod: 2018-04-12T00:00:00+00:00
+slug: "of-life-and-death"
+draft: true
+---
 
 On July 8th 2016 at 2:08pm, my mom passed away in her hospice bed. Her death certificate says she died at 2:34pm, which is when she was legally declared dead by the hospice doctor. In the 24 minutes difference, my family and I sat in the hospice garden just outside of my mom's room and let reality sink in. We all had just watched her pass away at age 56, after a 2 year long battle with cancer and even though in the end we all secretly and somewhat openly hoped she would pass away quickly and without further suffering, no one actually wanted her to die.
 

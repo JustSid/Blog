@@ -1,9 +1,9 @@
-+++
-title = "Capturing a trace with UIforETW"
-date = 2018-05-20T00:00:00+00:00
-categories = ["Development", "VIM"]
-slug = "capturing-a-trace-with-uiforetw"
-+++
+---
+title: "Capturing a trace with UIforETW"
+date: 2018-05-20T00:00:00+00:00
+lastmod: 2018-05-20T00:00:00+00:00
+slug: "capturing-a-trace-with-uiforetw"
+---
 
 Event Tracing for Windows (ETW) is an incredibly useful tracing mechanism built into Windows, however, it's not the easiest thing to use. In my day job, ETW is incredibly useful to get profiling samples from customer machines to get insights into performance issues. Since I keep writing the same How-To for everyone, I figured I just write down once here and then link it to people. If you are here because I sent you such a link, welcome!
 

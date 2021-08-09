@@ -1,9 +1,9 @@
-+++
-title = "Vero - True Social released"
-date = 2015-07-23T00:00:00+00:00
-categories = ["Development", "VIM"]
-slug = "vero-true-social-released"
-+++
+---
+title: "Vero - True Social released"
+date: 2015-07-23T00:00:00+00:00
+lastmod: 2015-07-23T00:00:00+00:00
+slug: "vero-true-social-released"
+---
 
 I talked about how I'm an evil person and part of the growing effort of destroying the web @hmans.io likes before (as if my recent Coffee machine post wasn't terrible enough). I haven't said what I was working on, or really, what the company I work for is working on, but now it's released and I can finally talk about it: It being a social network. Or better put, yet another social network.
 

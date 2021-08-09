@@ -1,11 +1,11 @@
-+++
-title = "Porting X-Plane to Vulkan and Metal Part #1 - Why bother porting a 20+ year old OpenGL engine?"
-date = 2020-01-18T00:00:00+00:00
-categories = ["Development", "VIM"]
-tags = [ "x-plane", "vulkan", "metal"]
-slug = "porting-xplane-part1"
-draft = true
-+++
+---
+title: "Porting X-Plane to Vulkan and Metal Part #1 - Why bother porting a 20+ year old OpenGL engine?"
+date: 2020-01-18T00:00:00+00:00
+lastmod: 2020-01-18T00:00:00+00:00
+tags: [ "x-plane", "vulkan", "metal"]
+slug: "porting-xplane-part1"
+draft: true
+---
 
 This is part 1 of many blog posts detailing basically what I've been up to for the past 2 years. As the title implies, it was porting the engine powering [X-Plane](https://x-plane.com), a professional flight simulator that is currently in version 11 and ships on Windows, macOS and Linux. During the porting effort we shipped 3 large feature and content updates, as well as a ton of smaller bug fix updates. If that doesn't sound exciting enough of a task, we also maintained backwards compatibility for most OpenGL based third party plugins in the modern Vulkan and Metal backends.
 

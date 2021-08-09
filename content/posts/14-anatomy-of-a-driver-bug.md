@@ -1,10 +1,10 @@
-+++
-title = "Anatomy of a graphics driver bug"
-date = 2017-07-31T00:00:00+00:00
-categories = ["Development", "VIM"]
-tags = [ "debugging", "x-plane" ]
-slug = "anatomy-of-a-driver-bug"
-+++
+---
+title: "Anatomy of a graphics driver bug"
+date: 2017-07-31T00:00:00+00:00
+lastmod: 2017-07-31T00:00:00+00:00
+tags: [ "debugging", "x-plane" ]
+slug: "anatomy-of-a-driver-bug"
+---
 
 
 X-Plane's plugin systems allows authors to load models in two ways: Asynchronously and Synchronously. Most plugins tend to use synchronous loading, but since all plugins run on the main thread there is a need and desire for some to use asynchronous loading. Up until now, the latter was broken however, and plugin authors complained about invisible models. From what I understand [Pilot Edge](https://www.pilotedge.net/) were the first to complain, but they want to use async loading to dynamically load in models of planes that flew in via multiplayer, which makes it non-trivial to debug. Luckily, the author of the fantastic [Better Pushback](https://github.com/skiselkov/BetterPushbackC) also ran into the issue and his plugin is completely local, so it's no problem to stop at a debugger for any amount of time without being worried a multiplayer socket closes and the whole setup has to be recreated.

@@ -1,10 +1,10 @@
-+++
-title = "Printing with Wood and Metal on an Ultimaker 2"
-date = 2014-11-20T00:00:00+00:00
-categories = ["Development", "VIM"]
-tags = [ "3d-printing" ]
-slug = "printing-with-wood-and-metal-on-an-ultimaker-2-2"
-+++
+---
+title: "Printing with Wood and Metal on an Ultimaker 2"
+date: 2014-11-20T00:00:00+00:00
+lastmod: 2014-11-20T00:00:00+00:00
+tags: [ "3d-printing" ]
+slug: "printing-with-wood-and-metal-on-an-ultimaker-2-2"
+---
 
 I've been printing lots of robots today on my Ultimaker 2, trying out different materials and what settings to use to print with them. I've used the special filaments from [Colorfabb](colorfabb.com), who had the genius idea to mix normal PLA filaments with metal and wood to allow normal printers to print with different materials. And because pictures say more than 1000 words, or so I've heard, here is the result:
 

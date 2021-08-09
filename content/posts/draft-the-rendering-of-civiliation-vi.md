@@ -1,9 +1,10 @@
-+++
-title = "The Rendering of Civiliation VI"
-date = 2019-04-12T00:00:00+00:00
-slug = "the-rendering-of-civiliation-vi"
-draft = true
-+++
+---
+title: "The Rendering of Civiliation VI"
+date: 2019-04-12T00:00:00+00:00
+lastmod: 2019-04-12T00:00:00+00:00
+slug: "the-rendering-of-civiliation-vi"
+draft: true
+---
 
 I'm a huge fan of Civilization VI, not only is it about as complex as I can reasonably stumble through while occasionally winning a round, it also has a gorgeous art style. Mixing the old school parchment map style with the cartoonish, saturated colours is just incredibly pleasing on my eyes. And ever since Civ VI came out on the Nintendo Switch, I have found myself playing it a lot since I can just pick it up for 10-20 minutes at a time.
 

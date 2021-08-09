@@ -1,9 +1,9 @@
-+++
-title = "Moving servers & domains"
-date = 2017-06-10T00:00:00+00:00
-categories = ["Development", "VIM"]
-slug = "server-move"
-+++
+---
+title: "Moving servers & domains"
+date: 2017-06-10T00:00:00+00:00
+lastmod: 2017-06-10T00:00:00+00:00
+slug: "server-move"
+---
 
 For years I have hosted all of my servers at [uberspace](https://uberspace.de), which are a fantastic company that makes hosting websites incredibly easy. At this point in time, I have 4 uberspaces running.
 

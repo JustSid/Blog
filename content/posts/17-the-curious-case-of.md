@@ -1,10 +1,10 @@
-+++
-title = "The curious case of 'ìe°[^]├UëÕ]Ús   UëÕâýj'"
-date = 2018-09-13T00:00:00+00:00
-categories = ["Development", "VIM"]
-tags = [ "firedrake", "programming", "debugging" ]
-slug = "the-curious-case-of"
-+++
+---
+title: "The curious case of 'ìe°[^]├UëÕ]Ús   UëÕâýj'"
+date: 2018-09-13T00:00:00+00:00
+lastmod: 2018-09-13T00:00:00+00:00
+tags: [ "firedrake", "programming", "debugging" ]
+slug: "the-curious-case-of"
+---
 
 11 months ago was the last time I touched [firedrake](https://github.com/JustSid/firedrake), and last weekend the urge to mess with it caught me again. So I set up WSL, installed all necessary dependencies and opened firedrake. I fired up the last compiled version I had, just to remind myself of where I had left things, and I QEMU was happy to dump my debug `printf()`'s via the virtual UART into stdout. All was good. Then I compiled firedrake from scratch and it stopped working, or rather, it stopped producing output via the UART. That's strange, I thought, messed with a couple of things and also stashed all my git changes but no avail; No more output via the UART.
 

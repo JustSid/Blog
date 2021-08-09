@@ -1,10 +1,10 @@
-+++
-title = "Integrating Crashlytics into Build Bots"
-date = 2015-01-30T00:00:00+00:00
-categories = ["Development", "VIM"]
-tags = [ "programming" ]
-slug = "integrating-crashlytics-into-build-bots"
-+++
+---
+title: "Integrating Crashlytics into Build Bots"
+date: 2015-01-30T00:00:00+00:00
+lastmod: 2015-01-30T00:00:00+00:00
+tags: [ "programming" ]
+slug: "integrating-crashlytics-into-build-bots"
+---
 
 
 Testflight has seemingly no interest in its regular business anymore and broke the crashreport symbolication a long time ago. We are quite dependent on that though, we don’t want to know how many times the app crashed but where it crashed. So, a week and a bit ago we jumped ship to Crashlytics, which is a really nice platform to analyze crashes. The only issue is that their dSYM upload requires a run script build phase, so their upload script runs as part of the build process. Now, you can add plenty of ifs around that to make sure that you don’t upload debug dSYMs, but still, chances are you will end up uploading more dSYMs than you need to. And I was on cruiseship wifi and am now in hotel wifi, both are shitty, and I don’t want Crashlytics to use up bandwidth that I don’t have to upload dSYMs that we don’t need. We have a build server running Xcode bots, that uploads builds to Testflight and these are the builds for which dSYMs are needed. Local crashes I can debug using the debugger.

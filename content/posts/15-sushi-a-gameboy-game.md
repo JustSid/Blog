@@ -1,10 +1,10 @@
-+++
-title = "Sushi - A Gameboy game"
-date = 2017-09-02T00:00:00+00:00
-categories = ["Development", "VIM"]
-tags = [ "gamejam", "programming", "project" ]
-slug = "sushi-a-gameboy-game"
-+++
+---
+title: "Sushi - A Gameboy game"
+date: 2017-09-02T00:00:00+00:00
+lastmod: 2017-09-02T00:00:00+00:00
+tags: [ "gamejam", "programming", "project" ]
+slug: "sushi-a-gameboy-game"
+---
 
 This is a blogpost I've been meaning to write for a long time, it's about a game [Nils](https://slindev.com/) and I wrote back in January 2017 for the Inno Games game Jam. That game jam happened together with the global game jam and the topic was: Waves. The source code for the game can be found [here](https://github.com/JustSid/sushi)
 

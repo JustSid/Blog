@@ -1,10 +1,10 @@
-+++
-title = "Pebble Blueprint"
-date = 2015-06-06T00:00:00+00:00
-categories = ["Development", "VIM"]
-tags = [ "project", "programming" ]
-slug = "pebble-blueprint"
-+++
+---
+title: "Pebble Blueprint"
+date: 2015-06-06T00:00:00+00:00
+lastmod: 2015-06-06T00:00:00+00:00
+tags: [ "project", "programming" ]
+slug: "pebble-blueprint"
+---
 
 Guys, guys, guys... I have been working on a project for a couple of weekends now and to make a long story short it's a watchface and watchapp generator for the Pebble Time for iOS. The basic idea is that it allows putting watchfaces/watchapps together easily and then deploying them on the Pebble that is attached to the iOS device.
 
