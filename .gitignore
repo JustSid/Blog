@@ -1,4 +1,8 @@
+# Dot files
+
 .DS_store
+content/.obsidian
+
 resources/_gen
 build
 public
