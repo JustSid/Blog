@@ -5202,7 +5202,8 @@ a.thumbnail.active {
 .media,
 .media-body {
   overflow: hidden;
-  zoom: 1;
+  transform: scale(1); /* Standard Property */
+  transform-origin: 0 0;  /* Standard Property */
 }
 .media-body {
   width: 10000px;
