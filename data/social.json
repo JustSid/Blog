@@ -1,11 +1,6 @@
 {
 	"accounts": [
 		{
-			"name": "Twitter",
-			"tag": "twitter",
-			"url": "https://twitter.com/feresignum"
-		},
-		{
 			"name": "GitHub",
 			"tag": "github",
 			"url": "https://github.com/JustSid"

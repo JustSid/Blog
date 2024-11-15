@@ -1,16 +1,20 @@
 @font-face {
-    font-family: 'Inter';
-    src: url('/fonts/Inter-Light-BETA.woff') format('woff'),
-         url('/fonts/Inter-Light-BETA.ttf') format('truetype');
+    font-family: 'Merriweather';
+    src: url('/fonts/Merriweather-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Inter';
-    src: url('/fonts/Inter-Regular.woff') format('woff'),
-         url('/fonts/Inter-Regular.ttf') format('truetype');
+    font-family: 'Merriweather';
+    src: url('/fonts/Merriweather-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: bold;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('/fonts/Merriweather-Italic.ttf') format('truetype');
+    font-weight: italic;
+    font-style: italic;
 }
 
 @font-face {
@@ -31,11 +35,11 @@ code {
 }
 
 body {
-  font-family: 'Inter'
+  font-family: 'Merriweather';
 }
 
 h1,h2,h3,h4,h5 {
-  font-family: 'Inter';
+  font-family: 'Merriweather';
   font-weight: bold;
 }
 a { 
@@ -52,8 +56,8 @@ h2 a,
 h3 a,
 h4 a,
 h5 a {
-   transition: all 0.5s ease;
-    color:#333;
+  transition: all 0.5s ease;
+  color:#333;
 }
 a:hover {
   color:#4078c0;

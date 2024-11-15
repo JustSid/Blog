@@ -10,9 +10,7 @@ Almost a year ago, with macOS 10.15, Apple finally added GPU timer queries to Me
 
 > A timestamp.
 
-That's pretty useless, there's no unit attached to it! I ended up writing the following tweet last December when I first implemented GPU timers for Metal:
-
-{{< tweet user="feresignum" id="1207478938588418048" >}}
+That's pretty useless, there's no unit attached to it!
 
 I actually put down GPU timers on Metal because they were pretty damn broken in general, besides their absolute lack of documentation. For example, they would just crash on Intel. And then they would crash on AMD hardware. It wasn't until the release of macOS 10.15.5 a few days before Apple announced macOS 11, that GPU timers were actually fixed. The documentation, however, was not updated.
 

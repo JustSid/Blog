@@ -12,9 +12,7 @@ Alright, debugger time, QEMU is nice enough to provide a gdbserver that can be c
 
 I tried allocating a buffer on the stack and putting a short string in there, unfortunately Clang was smart enough to detect what it was and also put it into the .rodata section (although separate from the strings). That turned out to be interesting, instead of printing 'Hello' it printed 'ìe°[^]├UëÕ]Ús   UëÕâýj'. Wat?!
 
-Obvious next step: Disassembler. I actually found out that my favourite disassembler, Hopper, runs on WSL and works quite well on Windows with a X-Server installed.  A excited tweet followed:
-
-{{< tweet user="feresignum" id="1039799594849198080" >}}
+Obvious next step: Disassembler. I actually found out that my favourite disassembler, Hopper, runs on WSL and works quite well on Windows with a X-Server installed.
 
 However, Hopper revealed that the address was perfectly valid and pointed into the .rodata section of the firedrake binary. I then compared the working binary from 11 months ago to the one I had now, but couldn't find any differences for the life of me. The sections all looked the same, the access was the same, just GRUB seemed to zero out my .rodata section now? I ended up trying a couple of things and scratching my head some more, but eventually I decided to look at the binary itself and dump its content with readelf. Here are the relevant parts:
 
