@@ -2,7 +2,7 @@
 title: "Ultimaker modding"
 date: 2017-01-23T00:00:00+00:00
 lastmod: 2017-01-23T00:00:00+00:00
-tags: [ "3d-printing", "project" ]
+tags: [ "3d-printing" ]
 slug: "ulitmaker-modding"
 ---
 

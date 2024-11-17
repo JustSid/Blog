@@ -2,7 +2,7 @@
 title: "The curious case of 'ìe°[^]├UëÕ]Ús   UëÕâýj'"
 date: 2018-09-13T00:00:00+00:00
 lastmod: 2018-09-13T00:00:00+00:00
-tags: [ "firedrake", "programming", "debugging" ]
+tags: [ "firedrake", "debugging" ]
 slug: "the-curious-case-of"
 ---
 

@@ -2,7 +2,7 @@
 title: "Firedrake memory corruption bug"
 date: 2015-01-04T00:00:00+00:00
 lastmod: 2015-01-04T00:00:00+00:00
-tags: [ "programming", "firedrake", "debugging" ]
+tags: [ "firedrake", "debugging" ]
 slug: "firedrake-memory-corruption-bug"
 ---
 

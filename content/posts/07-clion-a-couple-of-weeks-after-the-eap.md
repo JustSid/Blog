@@ -2,7 +2,7 @@
 title: "CLion, a couple of weeks after the EAP"
 date: 2015-05-15T00:00:00+00:00
 lastmod: 2015-05-15T00:00:00+00:00
-tags: [ "programming" ]
+tags: [ ]
 slug: "clion-a-couple-of-weeks-after-the-eap"
 ---
 

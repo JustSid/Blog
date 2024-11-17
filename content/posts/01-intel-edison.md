@@ -2,7 +2,7 @@
 title: "Intel Edison"
 date: 2014-10-22T00:00:00+00:00
 lastmod: 2014-10-22T00:00:00+00:00
-tags: [ "programming", "firedrake" ]
+tags: [ "firedrake" ]
 slug: "intel-edison"
 ---
 Received my Intel Edison today, super cute device that promises to be quite lovely (especially for me coming from an x86 background and having a hard time with the ARM on the Raspberry Pi). I especially love the super small form factor of the Edison, which makes some applications much more feasible than the Pi.

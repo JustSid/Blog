@@ -2,7 +2,7 @@
 title: "Resolving Metal GPU timers"
 date: 2020-07-08T15:45:00+00:00
 lastmod: 2020-07-08T15:45:00+00:00
-tags: [ "metal", "programming" ]
+tags: [ "metal" ]
 slug: "resolving-metal-gpu-timers"
 ---
 

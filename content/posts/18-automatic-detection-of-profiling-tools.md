@@ -2,7 +2,7 @@
 title: "Automatic detection of profiling tools"
 date: 2018-09-25T00:00:00+00:00
 lastmod: 2018-09-25T00:00:00+00:00
-tags: [ "programming", "debugging" ]
+tags: [ "debugging" ]
 slug: automatic-detection-of-profiling-tools"
 ---
 
@@ -29,8 +29,10 @@ Looking at the environment variables works similarly to looking at injected DLLs
 
 `AMPLXE_DATA_DIR` points to a directory owned by VTune Amplifier XE, and indeed the environment variable is not present when launched without VTune. Which makes the trick of discovering if VTune is present or not as simple as:
 
+```cpp
 DWORD result = GetEnvironmentVariable("AMPLXE_DATA_DIR", NULL, 0);
 _g_vtune_enabled = !(result == 0 && GetLastError() == ERROR_ENVVAR_NOT_FOUND);
+```
 
 ## Useful macros
 

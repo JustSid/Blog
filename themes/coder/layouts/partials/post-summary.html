@@ -1,19 +1,14 @@
-<article class="summary col-md-12 post">
-    <header>
-        <h2 class="title">
-        <a href="{{ .Permalink }}">{{ .Title}}</a> 
-        </h2>
-    </header>
-    
-    <div class="subhead">
-        {{- partial "post-publish.html" . -}}
-        {{- partial "post-tags.html" . -}}
-    </div>
+<article class="row post">
+    <header class="col-xs-12">
+        <h1 class="title"><a href="{{ .Permalink }}">{{ .Title}}</a></h1>
 
-    <section>
-        <p>
-            {{ .Summary }}
-            <a href="{{ .Permalink }}">Read post <i class="el el-caret-right read-more"></i></a>
-        </p>
+        <div class="subhead">
+            {{- partial "post-frontmatter.html" . -}}
+        </div>
+    </header>
+
+    <section class="col-xs-12">
+        {{ .Summary }}
+        <a href="{{ .Permalink }}">Read post <i class="el el-caret-right read-more"></i></a>
     </section>
 </article>

@@ -2,7 +2,7 @@
 title: "Integrating Crashlytics into Build Bots"
 date: 2015-01-30T00:00:00+00:00
 lastmod: 2015-01-30T00:00:00+00:00
-tags: [ "programming" ]
+tags: [ "ios" ]
 slug: "integrating-crashlytics-into-build-bots"
 ---
 

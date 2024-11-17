@@ -2,7 +2,7 @@
 title: "Anatomy of a graphics driver bug"
 date: 2017-07-31T00:00:00+00:00
 lastmod: 2017-07-31T00:00:00+00:00
-tags: [ "debugging", "x-plane" ]
+tags: [ "debugging", "x-plane", "opengl" ]
 slug: "anatomy-of-a-driver-bug"
 ---
 

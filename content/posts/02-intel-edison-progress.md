@@ -2,7 +2,7 @@
 title: "Intel Edison Progress"
 date: 2014-10-26T00:00:00+00:00
 lastmod: 2014-10-26T00:00:00+00:00
-tags: [ "programming", "firedrake" ]
+tags: [ "firedrake" ]
 slug: "intel-edison-progress"
 ---
 So, progress report on my Edison adventure: I managed to get my own kernel on it and have U-Boot boot it, which in retrospect took way longer than it should have (I'm not good at computers and embedded). Now the next issue is that the Edison has a Watchdog that will automatically reset the board if the Kernel is not periodically pinging it. The whole thing works by doing IPC from the Atom to the Quark, and so now I'm going through the Linux patch that comes with the Edison SDK to figure out how the hell all of this is supposed to work.

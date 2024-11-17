@@ -2,7 +2,7 @@
 title: "Firedrake and Intel Edison"
 date: 2014-11-12T00:00:00+00:00
 lastmod: 2014-11-12T00:00:00+00:00
-tags: [ "programming", "firedrake" ]
+tags: [ "firedrake" ]
 slug: "firedrake-and-intel-edison"
 ---
 

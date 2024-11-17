@@ -2,7 +2,7 @@
 title: "Debugging VK_ERROR_DEVICE_LOST with Nvidia Device Diagnostics"
 date: 2019-04-12T00:00:00+00:00
 lastmod: 2019-04-12T00:00:00+00:00
-tags: [ "debugging", "graphics", "vulkan" ]
+tags: [ "debugging", "vulkan" ]
 slug: "debugging-vk_error_device_lost-with-nvidia-device-diagnostics"
 ---
 

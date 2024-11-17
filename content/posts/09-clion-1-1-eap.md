@@ -2,7 +2,7 @@
 title: "CLion 1.1 EAP"
 date: 2015-07-10T00:00:00+00:00
 lastmod: 2015-07-10T00:00:00+00:00
-tags: [ "programming" ]
+tags: [ ]
 slug: "clion-1-1-eap"
 ---
 

@@ -2,7 +2,7 @@
 title: "Sushi - A Gameboy game"
 date: 2017-09-02T00:00:00+00:00
 lastmod: 2017-09-02T00:00:00+00:00
-tags: [ "gamejam", "programming", "project" ]
+tags: [ "gamejam" ]
 slug: "sushi-a-gameboy-game"
 ---
 

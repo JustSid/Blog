@@ -2,7 +2,7 @@
 title: "Pebble Blueprint"
 date: 2015-06-06T00:00:00+00:00
 lastmod: 2015-06-06T00:00:00+00:00
-tags: [ "project", "programming" ]
+tags: [ ]
 slug: "pebble-blueprint"
 ---
 

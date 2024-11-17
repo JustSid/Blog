@@ -1,7 +1,7 @@
 ---
 title: "Reverse engineering the Adreno Vulkan driver"
 date: 2024-11-15T14:17:00+08:00
-tags: [ "programming", "vulkan", "debugging", "android" ]
+tags: [ "vulkan", "debugging", "android", "x-plane" ]
 slug: "adreno-driver-re"
 ---
 

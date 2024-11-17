@@ -1,27 +1,3 @@
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-6">
-          <i class="el el-stop footer-icon"></i>
-            {{ $author := .Param "author"}}
-            {{ if $author }}
-              &copy; 2020 <a href="{{ .Site.BaseURL }}">{{ $author }}</a> All rights reserved.<br><br>
-            {{ else }}
-              &copy; 2020 <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> All rights reserved.<br><br>
-            {{ end }}
-            
-          </div>
-          <div class="col-xs-6 text-right hidden-sm hidden-xs">Proudly published with <a href="https://gohugo.io">Hugo</a></div>
-        </div>
-      </div>
-    </footer>
-    <a href="#" class="back-to-top"><span class="fa fa-angle-up fa-2x"></span></a>
-
-    {{ if eq (getenv "HUGO_ENV") "production" }}
-      {{ with .Param "goat_counter" }}
-        <script data-goatcounter="https://{{ . }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-      {{ end }}
-    {{ end }}
-
+    <hr>
   </body>
 </html>

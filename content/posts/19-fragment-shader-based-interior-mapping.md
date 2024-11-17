@@ -2,7 +2,7 @@
 title: "Fragment shader based interior mapping"
 date: 2018-10-02T00:00:00+00:00
 lastmod: 2018-10-02T00:00:00+00:00
-tags: [ "programming", "graphics" ]
+tags: [ "glsl" ]
 slug: "fragment-shader-based-interior-mapping"
 ---
 
