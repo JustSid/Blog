@@ -1,0 +1,17 @@
+ {{ if .Page.Draft }}
+    Draft post.
+{{ else }}
+  {{ if ne ($.PublishDate.Format "2006-01-02") "0001-01-01" }}
+      Published on <time datetime={{ .PublishDate | time.Format ":date_medium" }}>{{ .PublishDate | time.Format ":date_medium" }}</time>.
+  {{ end }}
+{{ end }}
+</br>
+{{ $taxonomy := "tags" }}
+{{ with .Param $taxonomy }}
+	Filed under 
+    {{ range $index, $tag := . | sort }}
+      {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+      	<a href="{{ .Permalink }}"><span class="label label-default">{{ $tag | urlize }}</span></a>
+      {{- end -}}
+    {{- end -}}
+{{ end }}

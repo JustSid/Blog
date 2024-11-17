@@ -3,6 +3,7 @@
 .DS_store
 content/.obsidian
 
+.hugo_build.lock
 resources/_gen
 build
 public
